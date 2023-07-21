@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> belajar html </title>
+       
+    </head>
+    <body>
+        <h1> Belajar HTML </h1>
+        <div id="name"></div>
+        <script>
+            //alert("hello world")
+            var name = prompt("Whats your name ? ")
+            alert("hello "+name)
+            var confirm1 = confirm("are you singel ?")
+            document.getElementById("name").innerHTML = "hello "+name
+            document.getElementById("name").innerHTML += "you are "+`${confirm1 ? "singel" : "taken"}`
+            
+
+        </script>
+    </body>
+</html>

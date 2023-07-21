@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar HTML </title>
+    </head>
+    <body>
+        <h1 align="center"> HTML sangat mudah</h1>
+        <hr />
+            <a href=""> Home </a> | <a href="./service.html"> Service </a>| <a href="https://youtube.com" target="_blank"> Youtube </a>
+        <hr />
+        <div> Belajar html sangat mudah </div>
+        <!-- ini adalah comment -->
+        <p> ini adalah paragraf. ini adalah pesan yang ingin di sampaikan </p>
+        <p> dan ini adalah pesan <b>penting</b>. Dan ini juga <strong> penting </strong> </p>
+        <p> saya butuh <br/> dalam kehidupan </p>
+        <p> 
+            <ul>
+                <li> Task 1 </li>
+                <li> Task 2 </li>
+                <li> Task 3 </li>
+            </ul>
+            <ol>
+                <li> Task 1 </li>
+                <li> Task 3 </li>
+                <li> Task 2 </li>
+            </ol>
+        </p>
+        <p>
+            <ul>
+                <li> <b>Bold</b> dan <strong>Strong</strong> </li>
+                <li> <i>Italic</i> dan <em> Emphasis </em> </li>
+                <li> <mark> Mark </mark></li>
+                <li> <small> Small </small></li>
+                <li> Foo <blockquote> <p>" Quoted "</p> </blockquote> Bar </li>
+                <li> <code style="background-color: black; color:greenyellow"> var name = 'dimas' </code></li>
+                <li> <del> Delete </del> dan <strike> Strike </strike></li>
+                <li> Foo <ins> Inserted </ins> Bar <u> Underline </u></li>
+                <li> Foo <sup> Coba </sup> Bar </li>
+                <li> Foo <sub> Bawah </sub> Bar </li>
+            </ul>
+        </p>
+        <figure>
+            <img height="200" width="300" 
+        src="https://kunglaw.github.io/assets/img/react-native.png" 
+        title="react" alt="react" />
+            <figcaption> React JS </figcaption>
+        </figure>
+        
+        <img src="./images2.png" height="200" width="300" alt="lorem ipsum" title="lorem ipsum"  />
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead >
+                <tr>
+                    <th width="200"> Name </th>
+                    <th width="300"> Age </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Dimas </td>
+                    <td> 32 </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        INI MERGE
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"> Dimas </td>
+                    <td> 32 </td>
+                </tr>
+                <tr>
+                   
+                    <td> 32 </td>
+                </tr>
+            </tbody>
+        </table>
+        <br /><br />
+        <form method="post" action="">
+            <fieldset>
+                <legend> Form Data Diri </legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="100"> <label for="email">Email</label> </td>
+                            <td  width="100"> <input type="email" name="email" id="email" placeholder="please input email" /></td>
+                        </tr>
+                        <tr>
+                            <td width="100"> Password </td>
+                            <td  width="100"> <input type="password" name="password" /></td>
+                        </tr>
+                        <tr>
+                            <td width="100"> Date </td>
+                            <td  width="100"> <input type="date" name="date" /></td>
+                        </tr>
+                        <tr>
+                            <td width="100"> City </td>
+                            <td  width="100"> 
+                                <select name="city">
+                                    <option disabled selected> -- Select City -- </option>
+                                    <option value="jakarta"> Jakarta </option>
+                                    <option value="surabaya"> Surabaya </option>
+                                    <option value="bandung"> Bandung </option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"> Gender </td>
+                            <td  width="100"> 
+                            <input type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label> 
+                            <input type="radio" name="gender" value="female" id="female" /> <label for="female">Female</label>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"> Hobby </td>
+                            <td  width="300"> 
+                            <input type="checkbox" name="hobby" value="genshin impact" id="gi" /> <label for="gi"> Genshin Impact</label> 
+                            <input type="checkbox" name="hobby" value="rocket league" id="rl" /> <label for="rl">Rocket League</label>
+                            <input type="checkbox" name="hobby" value="gta5" id="gta5" /> <label for="gta5">GTA 5</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100"> Description </td>
+                            <td  width="300"> 
+                            <textarea cols="50" rows="20"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="200" colspan="2"> 
+                                <input type="submit" />    
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </fieldset>
+        </form>
+        <button onclick="hello()"> Hello </button>
+        <script>
+            function hello() { 
+                let email = document.getElementById("email").value
+                alert("hello" + email)
+            }
+        </script>
+    </body>
+</html>
